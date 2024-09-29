@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #EDDFE0; /* Background header */
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: #555;
+    cursor: default;
+}
+
+.logo span {
+    color: #705C53;
+}
+
+.navigation a {
+    font-size: 1.1em;
+    color: #555;
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navigation a:hover {
+    color: #705C53;
+}
+
+.btn-talk {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 35px;
+    background: #705C53;
+    border-radius: 10px;
+    border: 2px solid #705C53;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.btn-talk:hover {
+    color: #705C53;
+    background: transparent;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Fleksibilitas tinggi viewport */
+    background: #EDDFE0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Memisahkan konten dan gambar */
+    padding: 30px 100px;
+    padding-top: 100px; /* Ruang untuk header tetap */
+}
+
+.content {
+    max-width: 500px;
+    color: #555;
+}
+
+.content h2 {
+    font-size: 3em;
+}
+
+.content h2 span {
+    color: #705C53;
+}
+
+.content h4 {
+    font-size: 2em;
+}
+
+.content p {
+    padding: 10px 0 40px 0;
+}
+
+.btn-group a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: #705C53;
+    border-radius: 10px;
+    border: 2px solid #705C53;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.btn-group{
+    background: #EDDFE0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-group a:hover:nth-child(1) {
+    color: #705C53;
+    background: transparent;
+}
+
+.btn-group a:nth-child(2) {
+    color: #705C53;
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+
+.btn-group a:hover:nth-child(2) {
+    color: #fff;
+    background: #705C53;
+}
+
+.experience {
+    padding: 100px 100px;
+    background: #EDDFE0;
+    color: #555;
+}
+
+.experience h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #705C53;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+}
+
+.experience-item h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.experience-item h4 {
+    font-size: 1.2em;
+    color: #705C53;
+    margin-bottom: 10px;
+}
+
+.experience-item p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.programming-languages {
+    padding: 60px 100px;
+    background: #EDDFE0;
+    color: #555;
+}
+
+.programming-languages h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #705C53;
+}
+
+.languages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.language {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.language:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.language i {
+    font-size: 2em;
+    color: #705C53;
+    margin-bottom: 10px;
+}
+
+.language h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.language p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Media Queries untuk Tampilan Mobile */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 50px;
+    }
+    .navigation a {
+        margin-right: 20px;
+        font-size: 1em;
+    }
+    .btn-talk {
+        padding: 8px 25px;
+    }
+    .home {
+        padding: 20px 50px;
+        padding-top: 80px; /* Sesuaikan padding-top */
+        flex-direction: column;
+        align-items: flex-start; /* Tampilan vertikal */
+    }
+
+    .content {
+        max-width: 100%; /* Sesuaikan lebar */
+    }
+    .content h2 {
+        font-size: 2.5em;
+    }
+    .content h4 {
+        font-size: 1.5em;
+    }
+    .btn-group a {
+        padding: 8px 30px;
+    }
+    .btn-group a:nth-child(2) {
+        margin-left: 15px;
+    }
+    .social-icons {
+        bottom: 20px;
+    }
+
+    .experience, .programming-languages {
+        padding: 40px 30px;
+    }
+
+    .languages {
+        justify-content: center;
+    }
+
+    .language {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        background: #EDDFE0;
+        padding: 15px 30px;
+    }
+    .navigation a {
+        margin-right: 10px;
+        font-size: 0.9em;
+    }
+    .btn-talk {
+        padding: 6px 25px;
+    }
+    .home {
+        padding: 15px 30px;
+        padding-top: 70px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-photo {
+        width: 200px;
+        margin: 40px 0;
+    }
+
+    .content h2 {
+        font-size: 2em;
+    }
+    .content h4 {
+        font-size: 1.3em;
+    }
+    .btn-group a {
+        padding: 6px 20px;
+    }
+    .btn-group a:nth-child(2) {
+        margin-left: 10px;
+        padding: 6px 15px;
+    }
+    .social-icons a {
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 15px;
+    }
+}
